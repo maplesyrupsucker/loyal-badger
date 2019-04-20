@@ -3,18 +3,19 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Loyal Badger</title>
+  <title>Loyal Badger | How to spend Loyalty Tokens with a Bitcoin Cash payment</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
   <script type="text/javascript" src="https://developer.bitcoin.com/badger/badgerToken-1.0.1.js"></script>
-  <script type="text/javascript" src="https://developer.bitcoin.com/badger/badgerButton-1.0.1.js"></script>
+
+  <!-- <script type="text/javascript" src="https://developer.bitcoin.com/badger/badgerButton-1.0.1.js"></script> -->
 
   <meta name="theme-color" content="#fafafa">
 
@@ -32,7 +33,7 @@
     <div class="row pt-4 pb-4 text-center">
       <div class="col-sm pt-4 pb-4">
         <h3 class="display-4">Token Tied Transactions</h3>
-        <p class="lead">What is the best way to spend Tokens and Bitcoin Cash in a transactional scenario.</p>
+        <p class="lead">Exploring how to spend <a href="https://simpleledger.cash/">Simple tokens</a> and Bitcoin Cash in a transactional scenario.</p>
       </div>
     </div>
     <div class="row">
@@ -40,18 +41,8 @@
         <div class="card border-0 shadow-lg" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">Step 1</h5>
-            <h6>Send 5 HONK</h6>
-            <p class="card-text">We're using <a href="https://explorer.bitcoin.com/bch/tx/7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1">$Honk</a> as the loyalty token. When a user pays 5 $HONK they will be able to complete their order at a cheaper rate.</p>
-            <button
-              class="badger-button btn btn-primary"
-              data-to="simpleledger:qpyg4qntl3kg5ucsf6eqsrt8hr34h2wn9qsvu3wuwa"
-              data-success-callback="badgerCallback"
-              data-token-protocol="slp"
-              data-token-id="7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1"
-              data-token-amount="5"
-            >
-            Send 5 $HONK
-            </button>
+            <h6 class="text-primary">Send Loyalty Token</h6>
+            <p class="card-text">We're using <a href="https://explorer.bitcoin.com/bch/tx/7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1">$HONK</a> as a loyalty token. Sending tokens will unlock a discount on your order.</p>
           </div>
         </div>
 
@@ -60,16 +51,8 @@
         <div class="card border-0 shadow-lg" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">Step 2.</h5>
-            <h6>Complete Payment</h6>
-            <p class="card-text">You're a loyal customer. Receive 50% off.</p>
-            <button
-              class="badger-button btn btn-secondary"
-              data-to="bitcoincash:pp8skudq3x5hzw8ew7vzsw8tn4k8wxsqsv0lt0mf3g"
-              data-satoshis="10000"
-              data-success-callback="badgerCallback3"
-            >
-              Tip 10,000 Satoshis
-            </button>
+            <h6 class="text-success">Unlock Revised Badger Button</h6>
+            <p class="card-text">Loyal customers are treated to a discount. Normal users pay full price. Token callback revises checkout button with discounted rate.</p>
           </div>
         </div>
 
@@ -78,20 +61,216 @@
         <div class="card border-0 shadow-lg" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">Step 3</h5>
-            <p class="card-text">No $HONK? That's okay. Please pay full price.</p>
-            <button
-              class="badger-button btn btn-success"
-              data-to="bitcoincash:pp8skudq3x5hzw8ew7vzsw8tn4k8wxsqsv0lt0mf3g"
-              data-satoshis="20000"
-              data-success-callback="badgerCallback2"
-            >
-              Tip 20,000 Satoshis
-            </button>
+            <h6 class="text-danger">Pay in BCH</h6>
+            <p class="card-text">Complete the payment in Bitcoin Cash.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="container pt-5">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="img/bch_logo.svg" alt="BCH Logo" width="72" height="72">
+      <h2>Demo Checkout form</h2>
+      <p class="lead">Below is a proposed solution for allowing users to receive a discount by using loyalty points.</p>
+      <em class="text-info">*This is not a real purchase for anything.</em>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Invisible Rock</h6>
+              <small class="text-muted">This rock is great for throwing at windows</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Smiles</h6>
+              <small class="text-muted">Enjoy a little satisfaction.</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Mostly Fresh Air</h6>
+              <small class="text-muted">Delivered instantly to your nose</small>
+            </div>
+            <span class="text-muted">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-disabled">
+            <div class="text-disabled">
+              <h6 class="my-0">Use Loyalty Points</h6>
+              <small>Send 5 $HONK for 50% off</small>
+            </div>
+            <button
+              class="badger-button btn btn-lg btn-info btn-sm"
+              data-to="simpleledger:qpyg4qntl3kg5ucsf6eqsrt8hr34h2wn9qsvu3wuwa"
+              data-success-callback=""
+              data-token-protocol="slp"
+              data-token-id="7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1"
+              data-token-amount="5"
+            >
+            Unlock Discount
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="honk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            
+            <div class="text-right">
+              <strong>$25</strong><br>
+              <small>~0.2 BCH</small>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="custom-select d-block w-100" id="country" required>
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="custom-select d-block w-100" id="state" required>
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          <hr class="mb-4">
+
+          <h4 class="mb-3">Payment</h4>
+
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="bitcoincash" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+              <label class="custom-control-label" for="bitcoincash">Bitcoin Cash</label>
+            </div>
+          </div>
+          
+          <hr class="mb-4">
+          <button
+            type="submit" class="badger-button btn btn-dark btn-lg btn-block"
+            data-to="bitcoincash:pp8skudq3x5hzw8ew7vzsw8tn4k8wxsqsv0lt0mf3g"
+            data-satoshis="20000"
+            data-success-callback=""
+          >
+            Pay 0.0002 BCH
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <ul class="list-inline">
+        <li class="list-unstyled mb-2">
+          <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 164px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2e9f365dae390394eb8d923cba8c5b11.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=maplesyrupsuckr&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1555757464798" data-screen-name="maplesyrupsuckr"></iframe><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li>
+        <li>
+          <a href="#">View on Github</a>
+        </li>
+      </ul>
+
+    </footer>
+
+  </div>
+
+
 
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
@@ -109,6 +288,30 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
+
+  <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+      </script>
+
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
