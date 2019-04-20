@@ -1,0 +1,115 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Loyal Badger</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="https://developer.bitcoin.com/badger/badgerToken-1.0.1.js"></script>
+  <script type="text/javascript" src="https://developer.bitcoin.com/badger/badgerButton-1.0.1.js"></script>
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <div class="container">
+    <div class="row pt-4 pb-4 text-center">
+      <div class="col-sm pt-4 pb-4">
+        <h3 class="display-4">Token Tied Transactions</h3>
+        <p class="lead">What is the best way to spend Tokens and Bitcoin Cash in a transactional scenario.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card border-0 shadow-lg" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Step 1</h5>
+            <h6>Send 5 HONK</h6>
+            <p class="card-text">We're using <a href="https://explorer.bitcoin.com/bch/tx/7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1">$Honk</a> as the loyalty token. When a user pays 5 $HONK they will be able to complete their order at a cheaper rate.</p>
+            <button
+              class="badger-button btn btn-primary"
+              data-to="simpleledger:qpyg4qntl3kg5ucsf6eqsrt8hr34h2wn9qsvu3wuwa"
+              data-success-callback="badgerCallback"
+              data-token-protocol="slp"
+              data-token-id="7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1"
+              data-token-amount="5"
+            >
+            Send 5 $HONK
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm">
+        <div class="card border-0 shadow-lg" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Step 2.</h5>
+            <h6>Complete Payment</h6>
+            <p class="card-text">You're a loyal customer. Receive 50% off.</p>
+            <button
+              class="badger-button btn btn-secondary"
+              data-to="bitcoincash:pp8skudq3x5hzw8ew7vzsw8tn4k8wxsqsv0lt0mf3g"
+              data-satoshis="10000"
+              data-success-callback="badgerCallback3"
+            >
+              Tip 10,000 Satoshis
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm">
+        <div class="card border-0 shadow-lg" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Step 3</h5>
+            <p class="card-text">No $HONK? That's okay. Please pay full price.</p>
+            <button
+              class="badger-button btn btn-success"
+              data-to="bitcoincash:pp8skudq3x5hzw8ew7vzsw8tn4k8wxsqsv0lt0mf3g"
+              data-satoshis="20000"
+              data-success-callback="badgerCallback2"
+            >
+              Tip 20,000 Satoshis
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
