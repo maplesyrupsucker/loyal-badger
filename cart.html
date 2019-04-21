@@ -1,0 +1,321 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Loyal Badger | How to spend Loyalty Tokens with a Bitcoin Cash payment</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- woocommerce styles by understrap - https://understrap.com/understrap/?page_id=1799 -->
+  <link rel="stylesheet" href="css/woocommerce.css">
+  <link rel="stylesheet" href="css/woocommerce-layout.css">
+
+
+  <script type="text/javascript" src="https://developer.bitcoin.com/badger/badgerToken-1.0.1.js"></script>
+
+  <!-- <script type="text/javascript" src="https://developer.bitcoin.com/badger/badgerButton-1.0.1.js"></script> -->
+
+  <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body class="page-template-default page woocommerce-cart woocommerce-page woocommerce-js group-blog">
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <div class="container">
+    <div class="row pt-4 pb-4 text-center">
+      <div class="col-sm pt-4 pb-4">
+        <h3 class="display-4">Woocommerce Loyalty Checkout</h3>
+        <p class="lead">Exploring how to spend <a href="https://simpleledger.cash/">Simple tokens</a> and Bitcoin Cash in a transactional scenario.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="card border-0 shadow-lg" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Step 1</h5>
+            <h6 class="text-primary">Send Loyalty Token</h6>
+            <p class="card-text">We're using <a href="https://explorer.bitcoin.com/bch/tx/7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1">$HONK</a> as a loyalty token. Sending tokens will update your cart with a discount on your order.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm">
+        <div class="card border-0 shadow-lg" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Step 2.</h5>
+            <h6 class="text-success">Proceed To Checkout</h6>
+            <p class="card-text">Loyal customers are treated to a discount which is passed along to checkout. Normal users pay full price. SLP callback could revise checkout with coupon code via: <br><code>?wc-ajax=apply_coupon</code></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm">
+        <div class="card border-0 shadow-lg" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Step 3</h5>
+            <h6 class="text-danger">Pay in BCH</h6>
+            <p class="card-text">Complete the payment in Bitcoin Cash.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="img/bch_logo.svg" alt="BCH Logo" width="72" height="72">
+      <h2>Demo Woocommerce Checkout form</h2>
+      <p class="lead">Below is a proposed solution for allowing users to receive a discount by using loyalty points. The discount is applied before proceeding to the checkout. This is standard for the typical <a href="https://understrap.com/understrap/?page_id=1799">Woocommerce Checkout Experience</a></p>
+      <em class="text-info">*This is not a real purchase for anything.</em>
+    </div>
+
+  <div class="wrapper" id="page-wrapper">
+
+    <div class="container" id="content" tabindex="-1">
+
+      <div class="row">
+
+        <!-- Do the left sidebar check -->
+        
+
+  <div class="col-md content-area" id="primary">
+
+    <main class="site-main" id="main">
+
+          
+                
+      <article class="post-1799 page type-page status-publish hentry" id="post-1799">
+
+        <header class="entry-header">
+
+          <h1 class="entry-title">Cart</h1>
+
+        </header><!-- .entry-header -->
+
+        
+        <div class="entry-content">
+
+          <div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
+      <form class="woocommerce-cart-form" action="https://understrap.com/understrap/?page_id=1799" method="post" _lpchecked="1">
+        
+        <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="product-remove">&nbsp;</th>
+              <th class="product-thumbnail">&nbsp;</th>
+              <th class="product-name">Product</th>
+              <th class="product-price">Price</th>
+              <th class="product-quantity">Quantity</th>
+              <th class="product-subtotal">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+                      <tr class="woocommerce-cart-form__cart-item cart_item">
+
+                  <td class="product-remove">
+                    <a href="https://understrap.com/understrap/?page_id=1799&amp;remove_item=dc40b7120e77741d191c0d2b82cea7be&amp;_wpnonce=944f315915" class="remove" aria-label="Remove this item" data-product_id="1802" data-product_sku="">×</a>            </td>
+
+                  <td class="product-thumbnail">
+                  <a href="https://understrap.com/understrap/?product=a-nice-sign"><img width="300" height="300" src="https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-300x300.jpg 300w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-600x600.jpg 600w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-100x100.jpg 100w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-150x150.jpg 150w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-768x768.jpg 768w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-1024x1024.jpg 1024w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a>            </td>
+
+                  <td class="product-name" data-title="Product">
+                    <a href="https://understrap.com/understrap/?product=a-nice-sign">A nice smell</a>            
+                  </td>
+
+                  <td class="product-price" data-title="Price">
+                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span>           </td>
+
+                  <td class="product-quantity" data-title="Quantity">
+                    <div class="quantity">
+                      <label class="sr-only" for="quantity_5cbc33d54a1e9">Quantity</label>
+                      <input type="number" id="quantity_5cbc33d54a1e9" class="input-text qty text" step="1" min="0" max="" name="cart[dc40b7120e77741d191c0d2b82cea7be][qty]" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="A nice sign quantity">
+                    </div>
+                  </td>
+
+                  <td class="product-subtotal" data-title="Total">
+                  <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span>           </td>
+                </tr>
+                
+            
+            <tr>
+              <td colspan="6" class="actions">
+
+            <div class="coupon" style="
+                text-align: left;
+            ">
+                <label for="coupon_code" style="
+                  display: block;
+                  text-align: left;
+                  font-size: 12px;
+              ">Save 50% by spending 5 $HONK</label>  <button type="submit" class="btn btn-info" name="apply_coupon" value="Use Loyalty Tokens">Apply Loyalty Points</button>
+            </div>
+                
+                <button type="submit" class="btn btn-outline-primary" name="update_cart" value="Update cart" disabled="" style="margin-top: 33px;">Update cart</button>
+                
+                <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="944f315915"><input type="hidden" name="_wp_http_referer" value="/understrap/?page_id=1799">       </td>
+            </tr>
+
+                </tbody>
+        </table>
+        </form>
+
+      <div class="cart-collaterals">
+        <div class="cart_totals ">
+
+        
+        <h2>Cart totals</h2>
+
+        <table cellspacing="0" class="shop_table shop_table_responsive">
+
+          <tbody><tr class="cart-subtotal">
+            <th>Subtotal</th>
+            <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span></td>
+          </tr>
+
+          
+          
+          
+          
+          
+          <tr class="order-total">
+            <th>Total</th>
+            <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span></strong> </td>
+          </tr>
+
+          
+        </tbody></table>
+
+        <div class="wc-proceed-to-checkout">
+          
+      <a href="https://understrap.com/understrap/?page_id=1800" class="btn btn-primary btn-lg btn-block">
+        Proceed to checkout</a>
+        </div>
+
+        
+      </div>
+      </div>
+
+      </div>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-footer">
+
+      
+    </footer><!-- .entry-footer -->
+
+  </article><!-- #post-## -->
+
+            
+          
+        </main><!-- #main -->
+
+        <!-- Do the right sidebar check -->
+        
+  </div><!-- #closing the primary container from /global-templates/left-sidebar-check.php -->
+
+    
+    <div class="col-md-4 widget-area" id="right-sidebar" role="complementary">
+      <aside id="search-2" class="widget widget_search">
+      <form method="get" id="searchform" action="https://understrap.com/understrap/" role="search">
+        <label class="sr-only" for="s">Search</label>
+        <div class="input-group">
+          <input class="field form-control" id="s" name="s" type="text" placeholder="Search …" value="">
+          <span class="input-group-append">
+            <input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit" value="Search">
+          </span>
+        </div>
+      </form>
+      </aside>    
+
+      <aside id="meta-2" class="widget widget_meta pt-4"><h3 class="widget-title">Meta</h3>
+        <ul>
+            <li><a href="https://understrap.com/understrap/wp-login.php">Log in</a></li>
+            <li><a href="https://understrap.com/understrap/?feed=rss2">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+            <li><a href="https://understrap.com/understrap/?feed=comments-rss2">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+            <li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>     
+        </ul>
+      </aside>
+
+      </div><!-- #right-sidebar -->
+      </div><!-- .row -->
+
+    </div><!-- #content -->
+
+  </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <ul class="list-inline">
+        <li class="list-unstyled mb-2">
+          <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 164px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.2e9f365dae390394eb8d923cba8c5b11.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=maplesyrupsuckr&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1555757464798" data-screen-name="maplesyrupsuckr"></iframe><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </li>
+        <li>
+          <a href="#">View on Github</a>
+        </li>
+      </ul>
+
+    </footer>
+
+  </div>
+
+
+
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+
+  <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+      </script>
+
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
