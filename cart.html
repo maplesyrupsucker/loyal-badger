@@ -43,7 +43,7 @@
     </div>
     <div class="row">
       <div class="col-sm">
-        <div class="card border-0 shadow-lg" style="width: 18rem;">
+        <div class="card border-0 shadow-lg mb-3" style="width: 18rem;margin-left:auto; margin-right:auto;">
           <div class="card-body">
             <h5 class="card-title">Step 1</h5>
             <h6 class="text-primary">Send Loyalty Token</h6>
@@ -53,7 +53,7 @@
 
       </div>
       <div class="col-sm">
-        <div class="card border-0 shadow-lg" style="width: 18rem;">
+        <div class="card border-0 shadow-lg mb-3" style="width: 18rem;margin-left:auto; margin-right:auto;">
           <div class="card-body">
             <h5 class="card-title">Step 2.</h5>
             <h6 class="text-success">Proceed To Checkout</h6>
@@ -63,7 +63,7 @@
 
       </div>
       <div class="col-sm">
-        <div class="card border-0 shadow-lg" style="width: 18rem;">
+        <div class="card border-0 shadow-lg mb-3" style="width: 18rem;margin-left:auto; margin-right:auto;">
           <div class="card-body">
             <h5 class="card-title">Step 3</h5>
             <h6 class="text-danger">Pay in BCH</h6>
@@ -79,7 +79,9 @@
       <img class="d-block mx-auto mb-4" src="img/bch_logo.svg" alt="BCH Logo" width="72" height="72">
       <h2>Demo Woocommerce Checkout form</h2>
       <p class="lead">Below is a proposed solution for allowing users to receive a discount by using loyalty points. The discount is applied before proceeding to the checkout. This is standard for the typical <a href="https://understrap.com/understrap/?page_id=1799">Woocommerce Checkout Experience</a></p>
-      <em class="text-info">*This is not a real purchase for anything.</em>
+      <div class="alert alert-danger" role="alert">
+        <strong>DEMO PURPOSES ONLY</strong>. This is not a real purchase for anything. Tokens and BCH will be lost if sent.
+      </div>
     </div>
 
   <div class="wrapper" id="page-wrapper">
@@ -109,7 +111,7 @@
         <div class="entry-content">
 
           <div class="woocommerce"><div class="woocommerce-notices-wrapper"></div>
-      <form class="woocommerce-cart-form" action="https://understrap.com/understrap/?page_id=1799" method="post" _lpchecked="1">
+      <form class="woocommerce-cart-form">
         
         <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
           <thead>
@@ -127,7 +129,7 @@
                       <tr class="woocommerce-cart-form__cart-item cart_item">
 
                   <td class="product-remove">
-                    <a href="https://understrap.com/understrap/?page_id=1799&amp;remove_item=dc40b7120e77741d191c0d2b82cea7be&amp;_wpnonce=944f315915" class="remove" aria-label="Remove this item" data-product_id="1802" data-product_sku="">×</a>            </td>
+                    <a href="#" class="remove" aria-label="Remove this item" data-product_id="1802" data-product_sku="">×</a>            </td>
 
                   <td class="product-thumbnail">
                   <a href="https://understrap.com/understrap/?product=a-nice-sign"><img width="300" height="300" src="https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-300x300.jpg 300w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-600x600.jpg 600w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-100x100.jpg 100w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-150x150.jpg 150w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-768x768.jpg 768w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe-1024x1024.jpg 1024w, https://understrap.com/understrap/wp-content/uploads/2017/02/gxnyoltxcr8-jonathan-simcoe.jpg 1280w" sizes="(max-width: 300px) 100vw, 300px"></a>            </td>
@@ -137,7 +139,7 @@
                   </td>
 
                   <td class="product-price" data-title="Price">
-                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span>           </td>
+                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25.00</span>           </td>
 
                   <td class="product-quantity" data-title="Quantity">
                     <div class="quantity">
@@ -147,7 +149,7 @@
                   </td>
 
                   <td class="product-subtotal" data-title="Total">
-                  <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span>           </td>
+                  <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25.00</span>           </td>
                 </tr>
                 
             
@@ -161,12 +163,25 @@
                   display: block;
                   text-align: left;
                   font-size: 12px;
-              ">Save 50% by spending 5 $HONK</label>  <button type="submit" class="btn btn-info" name="apply_coupon" value="Use Loyalty Tokens">Apply Loyalty Points</button>
+              ">Save 50% by spending 5 $HONK</label>  
+
+              <button
+                class="badger-button btn btn-info"
+                data-to="simpleledger:qpyg4qntl3kg5ucsf6eqsrt8hr34h2wn9qsvu3wuwa"
+                data-success-callback=""
+                data-token-protocol="slp"
+                data-token-id="7f8889682d57369ed0e32336f8b7e0ffec625a35cca183f4e81fde4e71a538a1"
+                data-token-amount="5"
+              >
+              Apply Loyalty Points
+              </button>
             </div>
                 
                 <button type="submit" class="btn btn-outline-primary" name="update_cart" value="Update cart" disabled="" style="margin-top: 33px;">Update cart</button>
                 
-                <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="944f315915"><input type="hidden" name="_wp_http_referer" value="/understrap/?page_id=1799">       </td>
+                <!-- <input type="hidden" id="woocommerce-cart-nonce" name="woocommerce-cart-nonce" value="944f315915">
+                <input type="hidden" name="_wp_http_referer" value="/understrap/?page_id=1799"> -->       
+              </td>
             </tr>
 
                 </tbody>
@@ -183,17 +198,12 @@
 
           <tbody><tr class="cart-subtotal">
             <th>Subtotal</th>
-            <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span></td>
+            <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25.00</span></td>
           </tr>
 
-          
-          
-          
-          
-          
           <tr class="order-total">
             <th>Total</th>
-            <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>79,00</span></strong> </td>
+            <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25.00</span></strong> </td>
           </tr>
 
           
@@ -232,7 +242,7 @@
     
     <div class="col-md-4 widget-area" id="right-sidebar" role="complementary">
       <aside id="search-2" class="widget widget_search">
-      <form method="get" id="searchform" action="https://understrap.com/understrap/" role="search">
+      <form method="get" id="searchform" action="#" role="search">
         <label class="sr-only" for="s">Search</label>
         <div class="input-group">
           <input class="field form-control" id="s" name="s" type="text" placeholder="Search …" value="">
